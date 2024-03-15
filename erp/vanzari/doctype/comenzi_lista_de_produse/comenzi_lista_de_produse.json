@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-14 13:14:21.809905",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_bglq",
+  "denumire_produs",
+  "data_livrare",
+  "column_break_bgwk",
+  "destina\u021bia_de_livrare",
+  "section_break_mbby",
+  "cantitate",
+  "column_break_xgnt",
+  "unitate_de_masura",
+  "section_break_kgpt",
+  "pret_eur",
+  "column_break_xixf",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "denumire_produs",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Denumire Produs",
+   "options": "Articol"
+  },
+  {
+   "fieldname": "cantitate",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cantitate"
+  },
+  {
+   "fieldname": "destina\u021bia_de_livrare",
+   "fieldtype": "Data",
+   "label": "Destina\u021bia de Livrare"
+  },
+  {
+   "fieldname": "pret_eur",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Pret (EUR)",
+   "options": "currency"
+  },
+  {
+   "fieldname": "data_livrare",
+   "fieldtype": "Date",
+   "label": "Data Livrare"
+  },
+  {
+   "fieldname": "column_break_bgwk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mbby",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xgnt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kgpt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_xixf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_bglq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "buc",
+   "fieldname": "unitate_de_masura",
+   "fieldtype": "Link",
+   "label": "Unitate de m\u0103sur\u0103",
+   "options": "Unitate de masura"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-15 14:13:21.372861",
+ "modified_by": "Administrator",
+ "module": "Vanzari",
+ "name": "Comenzi lista de produse",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

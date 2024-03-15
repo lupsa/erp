@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "creation": "2024-03-08 13:07:21.816670",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "denumire",
+  "client",
+  "denumire_grup",
+  "desen",
+  "column_break_gekx",
+  "greutate_neta",
+  "um_greutate_neta",
+  "lista_de_opera\u021bii_section",
+  "opera\u021bii",
+  "section_break_qwna",
+  "produs",
+  "material",
+  "program_debitare",
+  "nota",
+  "descriere_section",
+  "descriere"
+ ],
+ "fields": [
+  {
+   "fieldname": "denumire",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Denumire",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "description": "Atentie! Se trece si revizia",
+   "fieldname": "desen",
+   "fieldtype": "Data",
+   "label": "Desen"
+  },
+  {
+   "fieldname": "greutate_neta",
+   "fieldtype": "Float",
+   "label": "Greutate neta",
+   "precision": "2"
+  },
+  {
+   "fieldname": "denumire_grup",
+   "fieldtype": "Link",
+   "label": "Grup",
+   "options": "Grup",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gekx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "um_greutate_neta",
+   "fieldtype": "Link",
+   "label": "UM greutate neta",
+   "options": "Unitate de masura"
+  },
+  {
+   "depends_on": "eval:doc.denumire_grup == 'Repere';",
+   "fieldname": "section_break_qwna",
+   "fieldtype": "Section Break",
+   "label": "Informa\u021bii Reper"
+  },
+  {
+   "fieldname": "program_debitare",
+   "fieldtype": "Data",
+   "label": "Program Debitare"
+  },
+  {
+   "fieldname": "nota",
+   "fieldtype": "Data",
+   "label": "Nota"
+  },
+  {
+   "description": "Produsul din care face parte reperul",
+   "fieldname": "produs",
+   "fieldtype": "Link",
+   "label": "Produs",
+   "options": "Articol"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "descriere_section",
+   "fieldtype": "Section Break",
+   "label": "Descriere"
+  },
+  {
+   "fieldname": "descriere",
+   "fieldtype": "Text Editor",
+   "label": "Descriere"
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Link",
+   "label": "Calitate Material",
+   "options": "Materie Prima"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Clienti"
+  },
+  {
+   "depends_on": "eval:doc.denumire_grup == \"Produse Finite\"",
+   "fieldname": "lista_de_opera\u021bii_section",
+   "fieldtype": "Section Break",
+   "label": "Lista de Opera\u021bii"
+  },
+  {
+   "fieldname": "opera\u021bii",
+   "fieldtype": "Table",
+   "label": "Opera\u021bii",
+   "options": "Articol Lista Operatii"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 14:42:11.525583",
+ "modified_by": "Administrator",
+ "module": "Stoc",
+ "name": "Articol",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

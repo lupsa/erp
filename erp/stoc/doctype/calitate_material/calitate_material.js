@@ -1,7 +1,7 @@
 // Copyright (c) 2024, Darius and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("Client", {
+// frappe.ui.form.on("Calitate Material", {
 // 	refresh(frm) {
 
 // 	},

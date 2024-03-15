@@ -6,16 +6,21 @@
  "engine": "InnoDB",
  "field_order": [
   "section_break_jaze",
+  "date_comand\u0103_column",
   "denumire",
   "nr_comanda_client",
+  "date",
   "amended_from",
-  "date"
+  "persoana_de_contact_column",
+  "nume_prenume",
+  "lista_de_produse_section",
+  "produse_comandate"
  ],
  "fields": [
   {
    "fieldname": "section_break_jaze",
    "fieldtype": "Section Break",
-   "label": "Detalii"
+   "label": "Informa\u021bii despre comand\u0103"
   },
   {
    "fieldname": "amended_from",
@@ -43,12 +48,41 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Data"
+  },
+  {
+   "fieldname": "date_comand\u0103_column",
+   "fieldtype": "Column Break",
+   "label": "Date comand\u0103"
+  },
+  {
+   "fieldname": "persoana_de_contact_column",
+   "fieldtype": "Column Break",
+   "label": "Persoana de contact"
+  },
+  {
+   "fieldname": "lista_de_produse_section",
+   "fieldtype": "Section Break",
+   "label": "Lista de produse"
+  },
+  {
+   "fieldname": "nume_prenume",
+   "fieldtype": "Link",
+   "label": "Nume \u0219i Prenume",
+   "options": "Contact"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "produse_comandate",
+   "fieldtype": "Table",
+   "label": "Produse comandate",
+   "options": "Comenzi lista de produse",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-01-19 14:10:06.383867",
+ "modified": "2024-03-15 13:33:04.784682",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Comenzi",

@@ -17,7 +17,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Clien\u021bi",
-   "link_count": 1,
+   "link_count": 2,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -31,9 +31,19 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Comenzi",
+   "link_count": 0,
+   "link_to": "Comenzi",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-01-19 14:02:00.176498",
+ "modified": "2024-03-08 12:57:14.480365",
  "modified_by": "Administrator",
  "module": "ERP",
  "name": "Open Orders",

@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-14 14:38:54.440240",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lista_de_opera\u021bii_section",
+  "operatia",
+  "ore_manopera"
+ ],
+ "fields": [
+  {
+   "fieldname": "lista_de_opera\u021bii_section",
+   "fieldtype": "Section Break",
+   "label": "Lista de Opera\u021bii"
+  },
+  {
+   "fieldname": "operatia",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opera\u021bia",
+   "options": "Operatii"
+  },
+  {
+   "fieldname": "ore_manopera",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ore manoper\u0103",
+   "precision": "1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-14 14:40:57.065686",
+ "modified_by": "Administrator",
+ "module": "Stoc",
+ "name": "Articol Lista Operatii",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "creation": "2024-03-14 12:28:13.042897",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nhvx",
+  "simbolizare_alfanumerica",
+  "simbolizare_numerica"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nhvx",
+   "fieldtype": "Section Break",
+   "label": "Simbolizare"
+  },
+  {
+   "description": "Conform EN 10027-1",
+   "fieldname": "simbolizare_alfanumerica",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Simbolizare alfanumeric\u0103",
+   "reqd": 1
+  },
+  {
+   "description": "Conform EN 10027-2",
+   "fieldname": "simbolizare_numerica",
+   "fieldtype": "Data",
+   "label": "Simbolizare numerica"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 12:36:28.742533",
+ "modified_by": "Administrator",
+ "module": "Stoc",
+ "name": "Calitate Material",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

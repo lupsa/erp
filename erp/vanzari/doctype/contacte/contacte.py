@@ -5,5 +5,6 @@
 from frappe.model.document import Document
 
 
-class Client(Document):
-	pass
+class Contacte(Document):
+    def autoname(self):
+        self.name = self.nume_prenume

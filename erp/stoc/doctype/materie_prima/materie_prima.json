@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "creation": "2024-03-14 11:29:49.869068",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tip",
+  "grosime",
+  "cod",
+  "greutate_comerciala",
+  "calitate"
+ ],
+ "fields": [
+  {
+   "default": "Tabl\u0103",
+   "fieldname": "tip",
+   "fieldtype": "Select",
+   "label": "Tip",
+   "options": "\nBar\u0103 hexagonal\u0103\nBar\u0103 p\u0103trat\u0103\nBar\u0103 rotund\u0103\nCornier cu laturi egale\nCornier cu laturi egale\nHEA\nHEB\nHEM\nINP\nIPE\nTabl\u0103\nUAP\nUNP\n\u021aeav\u0103 rotund\u0103\n\u021aeav\u0103 p\u0103trat\u0103"
+  },
+  {
+   "depends_on": "eval:doc.tip != \"Tabl\u0103\"",
+   "fieldname": "cod",
+   "fieldtype": "Data",
+   "label": "Cod",
+   "mandatory_depends_on": "eval:doc.tip != \"Tabl\u0103\""
+  },
+  {
+   "fieldname": "calitate",
+   "fieldtype": "Link",
+   "label": "Calitate",
+   "mandatory_depends_on": "eval:doc.tip == \"Tabl\u0103\"",
+   "options": "Calitate Material"
+  },
+  {
+   "depends_on": "eval:doc.tip == \"Tabl\u0103\"",
+   "fieldname": "grosime",
+   "fieldtype": "Int",
+   "label": "Grosime",
+   "mandatory_depends_on": "eval:doc.tip == \"Tabl\u0103\""
+  },
+  {
+   "depends_on": "eval:doc.tip != \"Tabl\u0103\"",
+   "description": "kg/m",
+   "fieldname": "greutate_comerciala",
+   "fieldtype": "Float",
+   "label": "Greutate comercial\u0103",
+   "mandatory_depends_on": "eval:doc.tip != \"Tabl\u0103\"",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-14 14:48:02.397303",
+ "modified_by": "Administrator",
+ "module": "Stoc",
+ "name": "Materie Prima",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
