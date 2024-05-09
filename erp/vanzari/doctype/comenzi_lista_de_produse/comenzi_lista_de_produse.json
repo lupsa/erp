@@ -3,7 +3,6 @@
  "allow_rename": 1,
  "creation": "2024-03-14 13:14:21.809905",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "section_break_bglq",
@@ -18,7 +17,9 @@
   "section_break_kgpt",
   "pret_eur",
   "column_break_xixf",
-  "total"
+  "total",
+  "produc\u021bie_section",
+  "bom"
  ],
  "fields": [
   {
@@ -49,6 +50,7 @@
   {
    "fieldname": "data_livrare",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Data Livrare"
   },
   {
@@ -74,6 +76,7 @@
   {
    "fieldname": "total",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Total",
    "precision": "2",
    "read_only": 1
@@ -88,12 +91,22 @@
    "fieldtype": "Link",
    "label": "Unitate de m\u0103sur\u0103",
    "options": "Unitate de masura"
+  },
+  {
+   "fieldname": "produc\u021bie_section",
+   "fieldtype": "Section Break",
+   "label": "Produc\u021bie"
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Data",
+   "label": "BOM"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-15 14:13:21.372861",
+ "modified": "2024-03-21 12:29:15.383174",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Comenzi lista de produse",

@@ -8,7 +8,8 @@
  "field_order": [
   "lista_de_opera\u021bii_section",
   "operatia",
-  "ore_manopera"
+  "ore_manopera",
+  "observa\u021bii"
  ],
  "fields": [
   {
@@ -29,12 +30,18 @@
    "in_list_view": 1,
    "label": "Ore manoper\u0103",
    "precision": "1"
+  },
+  {
+   "fieldname": "observa\u021bii",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Observa\u021bii"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-03-14 14:40:57.065686",
+ "modified": "2024-05-09 14:11:51.365051",
  "modified_by": "Administrator",
  "module": "Stoc",
  "name": "Articol Lista Operatii",

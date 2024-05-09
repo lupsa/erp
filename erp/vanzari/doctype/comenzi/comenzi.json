@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "creation": "2024-01-19 14:03:13.204220",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,13 +7,14 @@
   "section_break_jaze",
   "date_comand\u0103_column",
   "denumire",
+  "cod_client",
   "nr_comanda_client",
   "date",
-  "amended_from",
   "persoana_de_contact_column",
   "nume_prenume",
   "lista_de_produse_section",
-  "produse_comandate"
+  "produse_comandate",
+  "amended_from"
  ],
  "fields": [
   {
@@ -77,12 +77,19 @@
    "label": "Produse comandate",
    "options": "Comenzi lista de produse",
    "reqd": 1
+  },
+  {
+   "fetch_from": "denumire.cod_client",
+   "fieldname": "cod_client",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Cod Client"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-15 13:33:04.784682",
+ "modified": "2024-03-21 12:28:47.224914",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Comenzi",
