@@ -18,15 +18,16 @@
   },
   {
    "fieldname": "tip_operatie",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Tip Opera\u021bie",
+   "options": "Debitare\nMontaj\nSudur\u0103\nTratament Termic\nSablare\nPrelucr\u0103ri Mecanice\nVopsire\nAmbalare",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-14 14:32:53.198509",
+ "modified": "2024-05-13 14:29:59.405341",
  "modified_by": "Administrator",
  "module": "Productie",
  "name": "Operatii",
