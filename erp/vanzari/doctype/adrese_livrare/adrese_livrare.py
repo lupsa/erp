@@ -5,5 +5,8 @@
 from frappe.model.document import Document
 
 
-class BOM(Document):
-	pass
+class AdreseLivrare(Document):
+    def autoname(self):
+        adr = self.adresa
+        adr.replace('\n', ' ').replace('\r', ' ')
+        self.name = adr

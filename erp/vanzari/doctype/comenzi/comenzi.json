@@ -12,6 +12,7 @@
   "date",
   "persoana_de_contact_column",
   "nume_prenume",
+  "adresa_de_livrare",
   "lista_de_produse_section",
   "produse_comandate",
   "amended_from"
@@ -35,19 +36,22 @@
   {
    "fieldname": "denumire",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Client",
    "options": "Clienti"
   },
   {
    "fieldname": "nr_comanda_client",
    "fieldtype": "Data",
-   "label": "Nr. comanda client",
+   "label": "Nr. comand\u0103 client",
    "length": 20
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Data"
+   "label": "Data comenzii"
   },
   {
    "fieldname": "date_comand\u0103_column",
@@ -68,7 +72,7 @@
    "fieldname": "nume_prenume",
    "fieldtype": "Link",
    "label": "Nume \u0219i Prenume",
-   "options": "Contact"
+   "options": "Contacte"
   },
   {
    "allow_in_quick_entry": 1,
@@ -84,12 +88,18 @@
    "fieldtype": "Read Only",
    "hidden": 1,
    "label": "Cod Client"
+  },
+  {
+   "fieldname": "adresa_de_livrare",
+   "fieldtype": "Link",
+   "label": "Adresa de Livrare",
+   "options": "Adrese Livrare"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-03-21 12:28:47.224914",
+ "modified": "2024-05-10 15:00:28.102969",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Comenzi",

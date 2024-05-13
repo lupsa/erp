@@ -1,0 +1,108 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"9n-ig2mwXY\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Produc\u021bie</span>\",\"col\":12}},{\"id\":\"E27lvsWaa_\",\"type\":\"card\",\"data\":{\"card_name\":\"Open Orders\",\"col\":4}},{\"id\":\"NgZIwr1AKA\",\"type\":\"card\",\"data\":{\"card_name\":\"Produse\",\"col\":4}}]",
+ "creation": "2024-01-19 13:04:30.681288",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "list",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Produc\u021bie",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Produse",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Articol",
+   "link_count": 0,
+   "link_to": "Articol",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Operatii",
+   "link_count": 0,
+   "link_to": "Operatii",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Open Orders",
+   "link_count": 4,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Comenzi",
+   "link_count": 0,
+   "link_to": "Comenzi",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Clien\u021bi",
+   "link_count": 0,
+   "link_to": "Clienti",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Adrese Livrare",
+   "link_count": 0,
+   "link_to": "Adrese Livrare",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Persoane de Contact",
+   "link_count": 0,
+   "link_to": "Contacte",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-05-13 12:26:41.095172",
+ "modified_by": "Administrator",
+ "module": "ERP",
+ "name": "Produc\u021bie",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "Produc\u021bie"
+}
