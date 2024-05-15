@@ -8,5 +8,5 @@ from frappe.model.document import Document
 class AdreseLivrare(Document):
     def autoname(self):
         adr = self.adresa
-        adr.replace('\n', ' ').replace('\r', ' ')
+        adr = ' '.join(adr.splitlines())
         self.name = adr
