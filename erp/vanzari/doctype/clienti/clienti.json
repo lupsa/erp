@@ -30,14 +30,15 @@
    "fieldtype": "Data",
    "label": "Cod Client",
    "length": 3,
+   "non_negative": 1,
    "reqd": 1,
-   "search_index": 1,
-   "set_only_once": 1
+   "set_only_once": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-19 13:42:34.038575",
+ "modified": "2024-05-14 10:28:35.247036",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Clienti",

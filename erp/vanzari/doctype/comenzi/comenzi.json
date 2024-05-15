@@ -6,10 +6,10 @@
  "field_order": [
   "section_break_jaze",
   "date_comand\u0103_column",
-  "denumire",
+  "client",
   "cod_client",
   "nr_comanda_client",
-  "date",
+  "data_comenzii",
   "persoana_de_contact_column",
   "nume_prenume",
   "adresa_de_livrare",
@@ -34,24 +34,10 @@
    "search_index": 1
   },
   {
-   "fieldname": "denumire",
-   "fieldtype": "Link",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Client",
-   "options": "Clienti"
-  },
-  {
    "fieldname": "nr_comanda_client",
    "fieldtype": "Data",
    "label": "Nr. comand\u0103 client",
    "length": 20
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Data comenzii"
   },
   {
    "fieldname": "date_comand\u0103_column",
@@ -83,7 +69,7 @@
    "reqd": 1
   },
   {
-   "fetch_from": "denumire.cod_client",
+   "fetch_from": "client.cod_client",
    "fieldname": "cod_client",
    "fieldtype": "Read Only",
    "hidden": 1,
@@ -94,12 +80,26 @@
    "fieldtype": "Link",
    "label": "Adresa de Livrare",
    "options": "Adrese Livrare"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Clienti"
+  },
+  {
+   "fieldname": "data_comenzii",
+   "fieldtype": "Date",
+   "label": "Data comenzii"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-10 15:00:28.102969",
+ "modified": "2024-05-14 10:52:42.262971",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Comenzi",
