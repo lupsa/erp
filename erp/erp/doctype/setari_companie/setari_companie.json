@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-15 14:40:27.886714",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "generale_section",
+  "moneda",
+  "produc\u021bie_section",
+  "setari_ore_productie_operatie_statie_de_lucru"
+ ],
+ "fields": [
+  {
+   "default": "EUR",
+   "fieldname": "moneda",
+   "fieldtype": "Link",
+   "label": "Moned\u0103",
+   "options": "Currency",
+   "precision": "3"
+  },
+  {
+   "fieldname": "generale_section",
+   "fieldtype": "Section Break",
+   "label": "Generale"
+  },
+  {
+   "fieldname": "produc\u021bie_section",
+   "fieldtype": "Section Break",
+   "label": "Produc\u021bie"
+  },
+  {
+   "fieldname": "setari_ore_productie_operatie_statie_de_lucru",
+   "fieldtype": "Table",
+   "label": "Set\u0103ri ore produc\u021bie / opera\u021bie / statie de lucru",
+   "options": "Setari Companie Productie Ore"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-05-15 14:47:48.143840",
+ "modified_by": "Administrator",
+ "module": "ERP",
+ "name": "Setari Companie",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

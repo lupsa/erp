@@ -11,14 +11,15 @@ frappe.ui.form.on("Comenzi", {
                 };
             });
 
-        frm.set_query("nume_prenume", function() {
-                return {
-                    "filters": {
-                        compania: frm.doc.client,
-                    }
-                };
-            });
-    }
+       frm.set_query("nume_prenume", function() {
+               return {
+                   "filters": {
+                       compania: frm.doc.client,
+                   }
+               };
+       });
+    },
+
 }),
 
 frappe.ui.form.on('Comenzi lista de produse', {

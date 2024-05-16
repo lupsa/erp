@@ -22,13 +22,13 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Tip Opera\u021bie",
-   "options": "Debitare\nMontaj\nSudur\u0103\nTratament Termic\nSablare\nPrelucr\u0103ri Mecanice\nVopsire\nAmbalare",
+   "options": "Debitare\nMontaj\nSudur\u0103\nTratament Termic\nSablare\nPrelucr\u0103ri Mecanice BMF\nPrelucr\u0103ri Mecanice TOS\nVopsire\nAmbalare",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-15 11:48:11.916057",
+ "modified": "2024-05-15 14:49:53.765922",
  "modified_by": "Administrator",
  "module": "Productie",
  "name": "Operatii",
