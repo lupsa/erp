@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-16 15:25:52.492965",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nr_comanda_interna",
+  "denumire_produs",
+  "desen",
+  "column_break_kcuk",
+  "nr_comanda_client",
+  "cantitate_buc"
+ ],
+ "fields": [
+  {
+   "fieldname": "denumire_produs",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Denumire Produs",
+   "options": "Articol"
+  },
+  {
+   "fetch_from": "denumire_produs.desen",
+   "fieldname": "desen",
+   "fieldtype": "Read Only",
+   "label": "Desen",
+   "options": "Articol"
+  },
+  {
+   "fieldname": "nr_comanda_interna",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Nr. comand\u0103 intern\u0103",
+   "options": "Comenzi"
+  },
+  {
+   "fieldname": "column_break_kcuk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "nr_comanda_interna.nr_comanda_client",
+   "fieldname": "nr_comanda_client",
+   "fieldtype": "Read Only",
+   "label": "Nr. comand\u0103 client"
+  },
+  {
+   "fieldname": "cantitate_buc",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Cantitate (buc)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-17 08:23:27.560765",
+ "modified_by": "Administrator",
+ "module": "Vanzari",
+ "name": "Delivery Note Lista de Produse",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

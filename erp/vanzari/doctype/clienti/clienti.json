@@ -8,7 +8,9 @@
  "field_order": [
   "section_break_1",
   "denumire",
-  "cod_client"
+  "cod_client",
+  "column_break_jltv",
+  "adresa"
  ],
  "fields": [
   {
@@ -34,11 +36,20 @@
    "reqd": 1,
    "set_only_once": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "column_break_jltv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adresa",
+   "fieldtype": "Small Text",
+   "label": "Adresa"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-14 10:28:35.247036",
+ "modified": "2024-05-17 08:41:30.284421",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Clienti",

@@ -9,8 +9,9 @@ from frappe.model.naming import getseries
 
 class Comenzi(Document):
     def autoname(self):
-        year = str(datetime.date.today().year)
-        name_prefix = "{}{}".format(year[2:], self.cod_client)
+        year = self.data_comenzii[2:4]
+        
+        name_prefix = "{}{}".format(year, self.cod_client)
         seria = getseries(name_prefix, 3)
         self.name = name_prefix + seria
 

@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-16 13:12:42.399161",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "denumire_client",
+  "column_break_djef",
+  "adresa_de_livrare",
+  "section_break_ierg",
+  "tabel_lista_produse",
+  "section_break_d3g1",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_d3g1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Delivery Note",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "numar_comanda.client",
+   "fieldname": "denumire_client",
+   "fieldtype": "Link",
+   "label": "Denumire Client",
+   "options": "Clienti"
+  },
+  {
+   "fieldname": "column_break_djef",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ierg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "adresa_de_livrare",
+   "fieldtype": "Link",
+   "label": "Adresa de Livrare",
+   "options": "Adrese Livrare"
+  },
+  {
+   "fieldname": "tabel_lista_produse",
+   "fieldtype": "Table",
+   "label": "Lista de Produse",
+   "options": "Delivery Note Lista de Produse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-17 08:49:08.513739",
+ "modified_by": "Administrator",
+ "module": "Vanzari",
+ "name": "Delivery Note",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
