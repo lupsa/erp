@@ -26,14 +26,14 @@ frappe.ui.form.on('Comenzi lista de produse', {
 	pret_eur(frm, cdt, cdn) {
         let row = frappe.get_doc(cdt, cdn);
 
-        row.total = row.pret_eur * row.cantitate;
+        row.total = row.pret_eur * row.cantitate_comandata;
         frm.refresh(cdn.total);
 	},
 
-	cantitate(frm, cdt, cdn) {
+	cantitate_comandata(frm, cdt, cdn) {
         let row = frappe.get_doc(cdt, cdn);
 
-        row.total = row.pret_eur * row.cantitate;
+        row.total = row.pret_eur * row.cantitate_comandata;
         frm.refresh(cdn.total);
 	},
 
