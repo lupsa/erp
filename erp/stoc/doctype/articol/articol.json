@@ -170,7 +170,7 @@
    "link_fieldname": "denumire_produs"
   }
  ],
- "modified": "2024-05-10 11:56:20.977877",
+ "modified": "2024-07-17 15:08:38.853449",
  "modified_by": "Administrator",
  "module": "Stoc",
  "name": "Articol",
@@ -192,5 +192,8 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }

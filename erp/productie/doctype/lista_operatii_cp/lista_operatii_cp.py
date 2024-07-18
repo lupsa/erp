@@ -3,10 +3,7 @@
 
 # import frappe
 from frappe.model.document import Document
-from frappe.model.naming import getseries
 
 
-class Comenzi(Document):
-    def autoname(self):
-        self.name = self.nr_comanda_client
-
+class ListaOperatiiCP(Document):
+	pass

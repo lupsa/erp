@@ -12,7 +12,6 @@
   "data_comenzii",
   "persoana_de_contact_column",
   "nume_prenume",
-  "adresa_de_livrare",
   "lista_de_produse_section",
   "produse_comandate",
   "amended_from"
@@ -77,12 +76,6 @@
    "label": "Cod Client"
   },
   {
-   "fieldname": "adresa_de_livrare",
-   "fieldtype": "Link",
-   "label": "Adresa de Livrare",
-   "options": "Adrese Livrare"
-  },
-  {
    "fieldname": "client",
    "fieldtype": "Link",
    "in_filter": 1,
@@ -102,7 +95,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-16 12:37:02.705188",
+ "modified": "2024-07-17 09:33:15.949469",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Comenzi",

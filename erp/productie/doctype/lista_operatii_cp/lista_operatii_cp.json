@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 12:07:06.020694",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "operatia",
+  "numar_ore_manopera",
+  "stare_operatie",
+  "obvervatii"
+ ],
+ "fields": [
+  {
+   "fieldname": "operatia",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Opera\u021bia",
+   "options": "Operatii",
+   "reqd": 1
+  },
+  {
+   "fieldname": "numar_ore_manopera",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Num\u0103r ore manoper\u0103",
+   "precision": "2"
+  },
+  {
+   "default": "Ne\u00eenceput",
+   "fieldname": "stare_operatie",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Stare Opera\u021bie",
+   "options": "Ne\u00eenceput\n\u00cen Lucru\nTerminat"
+  },
+  {
+   "fieldname": "obvervatii",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Observa\u021bii"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-17 12:54:36.251803",
+ "modified_by": "Administrator",
+ "module": "Productie",
+ "name": "Lista Operatii CP",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

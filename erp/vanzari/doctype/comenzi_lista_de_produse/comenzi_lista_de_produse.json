@@ -8,7 +8,11 @@
   "section_break_bglq",
   "denumire_produs",
   "column_break_qzdx",
+  "lista_operatii_cda",
+  "section_break_ypzg",
   "data_livrare",
+  "column_break_bpbi",
+  "adresa_de_livrare",
   "section_break_mbby",
   "cantitate_comandata",
   "cantitate_livrata",
@@ -101,12 +105,32 @@
    "fieldname": "cantitate_ramasa",
    "fieldtype": "Read Only",
    "label": "Cantitate ramas\u0103"
+  },
+  {
+   "fieldname": "lista_operatii_cda",
+   "fieldtype": "Link",
+   "label": "Lista de Opera\u021bii",
+   "options": "Lista Operatii"
+  },
+  {
+   "fieldname": "section_break_ypzg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_bpbi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adresa_de_livrare",
+   "fieldtype": "Link",
+   "label": "Adresa de Livrare",
+   "options": "Adrese Livrare"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-20 13:52:45.443187",
+ "modified": "2024-07-17 10:33:46.789842",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Comenzi lista de produse",

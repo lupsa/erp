@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Operatii - {denumire_produs}  #{###}",
+ "creation": "2024-07-17 10:12:01.211127",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "denumire_produs",
+  "lista_operatii"
+ ],
+ "fields": [
+  {
+   "fieldname": "denumire_produs",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Denumire Produs",
+   "options": "Articol",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lista_operatii",
+   "fieldtype": "Table",
+   "label": "Lista Opera\u021bii",
+   "options": "Articol Lista Operatii",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 11:38:53.624166",
+ "modified_by": "Administrator",
+ "module": "Productie",
+ "name": "Lista Operatii",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

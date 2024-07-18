@@ -2,23 +2,35 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("Comenzi", {
-    onload(frm) {
-        frm.set_query("adresa_de_livrare", function() {
-                return {
-                    "filters": {
-                        denumire_client: frm.doc.client,
-                    }
-                };
-            });
-
+    onload(frm, cdt, cdn) {
+        console.log(frm.doc)
        frm.set_query("nume_prenume", function() {
-               return {
-                   "filters": {
-                       compania: frm.doc.client,
-                   }
-               };
+            return {
+                "filters": {
+                    compania: frm.doc.client,
+                }
+            };
        });
+
+        frm.set_query("adresa_de_livrare", 'produse_comandate', function() {
+            return {
+                "filters": {
+                    denumire_client: frm.doc.client,
+                }
+            };
+        });
+
+        frm.set_query("lista_operatii_cda", 'produse_comandate', function(doc, cdt, cdn) {
+            let row = frappe.get_doc(cdt, cdn);
+            return {
+                "filters": {
+                    denumire_produs: row.denumire_produs,
+                }
+            };
+        });
+
     },
+
 
 }),
 

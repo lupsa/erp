@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-17 11:43:33.414358",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "numar_comanda_client",
+  "cod_client",
+  "client",
+  "denumire_produs",
+  "column_break_kban",
+  "section_break_mniz",
+  "situatie_operatii"
+ ],
+ "fields": [
+  {
+   "fieldname": "numar_comanda_client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Num\u0103r comand\u0103 client",
+   "options": "Comenzi",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "denumire_produs",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Denumire Produs",
+   "options": "Articol",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_kban",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mniz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "situatie_operatii",
+   "fieldtype": "Table",
+   "label": "Situa\u021bie Opera\u021bii",
+   "options": "Lista Operatii CP",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "numar_comanda_client.client",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Clienti",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "client.cod_client",
+   "fieldname": "cod_client",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "cod_client"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-17 14:45:43.967949",
+ "modified_by": "Administrator",
+ "module": "Productie",
+ "name": "Comanda Productie",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
