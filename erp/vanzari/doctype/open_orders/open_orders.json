@@ -4,6 +4,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "open_orders_tab",
   "section_break_jaze",
   "date_comand\u0103_column",
   "client",
@@ -14,20 +15,23 @@
   "nume_prenume",
   "lista_de_produse_section",
   "produse_comandate",
-  "amended_from"
+  "section_break_nbvp",
+  "amended_from",
+  "status_comenzi_productie_tab",
+  "comenzi_productie_section",
+  "tabel_comenzi_productie"
  ],
  "fields": [
   {
    "fieldname": "section_break_jaze",
-   "fieldtype": "Section Break",
-   "label": "Informa\u021bii despre comand\u0103"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Comenzi",
+   "options": "Open Orders",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
@@ -35,14 +39,14 @@
   {
    "fieldname": "nr_comanda_client",
    "fieldtype": "Data",
-   "label": "Nr. comand\u0103 client",
+   "label": "Num\u0103r comand\u0103 client",
    "length": 20,
    "reqd": 1
   },
   {
    "fieldname": "date_comand\u0103_column",
    "fieldtype": "Column Break",
-   "label": "Date comand\u0103"
+   "label": "Informa\u021bii despre comand\u0103"
   },
   {
    "fieldname": "persoana_de_contact_column",
@@ -65,7 +69,7 @@
    "fieldname": "produse_comandate",
    "fieldtype": "Table",
    "label": "Produse comandate",
-   "options": "Comenzi lista de produse",
+   "options": "Open Orders lista de produse",
    "reqd": 1
   },
   {
@@ -90,15 +94,45 @@
    "fieldtype": "Date",
    "label": "Data comenzii",
    "reqd": 1
+  },
+  {
+   "fieldname": "comenzi_productie_section",
+   "fieldtype": "Section Break",
+   "label": "Comenzi Productie",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_nbvp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tabel_comenzi_productie",
+   "fieldtype": "Table",
+   "options": "Open Orders Tabel Comenzi Productie"
+  },
+  {
+   "fieldname": "open_orders_tab",
+   "fieldtype": "Tab Break",
+   "label": "Open Orders"
+  },
+  {
+   "fieldname": "status_comenzi_productie_tab",
+   "fieldtype": "Tab Break",
+   "label": "Status Comenzi Productie"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2024-07-17 09:33:15.949469",
+ "links": [
+  {
+   "link_doctype": "Comenzi Productie",
+   "link_fieldname": "numar_comanda_client"
+  }
+ ],
+ "modified": "2024-07-26 08:32:12.760541",
  "modified_by": "Administrator",
  "module": "Vanzari",
- "name": "Comenzi",
+ "name": "Open Orders",
  "owner": "Administrator",
  "permissions": [
   {
@@ -133,5 +167,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

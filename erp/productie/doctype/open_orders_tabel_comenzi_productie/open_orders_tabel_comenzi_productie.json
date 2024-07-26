@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-25 13:02:44.325393",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "numar_comanda_productie",
+  "denumire_produs",
+  "column_break_tgvg",
+  "data_lansare_comanda_productie",
+  "status_comanda_productie"
+ ],
+ "fields": [
+  {
+   "fieldname": "numar_comanda_productie",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Numar Comanda Productie",
+   "options": "Comenzi Productie"
+  },
+  {
+   "fieldname": "column_break_tgvg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "denumire_produs",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Denumire Produs",
+   "options": "Articol"
+  },
+  {
+   "fieldname": "data_lansare_comanda_productie",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Data Lansare Comanda Productie"
+  },
+  {
+   "fieldname": "status_comanda_productie",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status Comand\u0103",
+   "options": "\n\u00cen Lucru\nTerminat\nLivrat\u0103"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-07-25 15:38:37.057888",
+ "modified_by": "Administrator",
+ "module": "Productie",
+ "name": "Open Orders Tabel Comenzi Productie",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

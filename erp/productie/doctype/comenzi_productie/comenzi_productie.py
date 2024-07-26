@@ -7,7 +7,7 @@ from frappe.model.naming import getseries
 from frappe.model.document import Document
 
 
-class ComandaProductie(Document):
+class ComenziProductie(Document):
     def autoname(self):
         year = datetime.now().strftime('%Y')[2:4]
         name_prefix = "{}{}".format(year, self.cod_client)

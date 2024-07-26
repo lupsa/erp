@@ -97,6 +97,7 @@
    "reqd": 1
   },
   {
+   "default": "0",
    "fieldname": "cantitate_livrata",
    "fieldtype": "Read Only",
    "label": "Cantitate livrat\u0103"
@@ -130,10 +131,10 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-07-17 10:33:46.789842",
+ "modified": "2024-07-26 08:00:07.066914",
  "modified_by": "Administrator",
  "module": "Vanzari",
- "name": "Comenzi lista de produse",
+ "name": "Open Orders lista de produse",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

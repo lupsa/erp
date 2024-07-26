@@ -9,7 +9,7 @@
   "denumire",
   "desen",
   "client",
-  "denumire_grup",
+  "denumire_categorie",
   "column_break_gekx",
   "greutate_neta",
   "lungime",
@@ -48,14 +48,6 @@
    "fieldtype": "Float",
    "label": "Greutate net\u0103 (kg)",
    "precision": "2"
-  },
-  {
-   "default": "Produse Finite",
-   "fieldname": "denumire_grup",
-   "fieldtype": "Link",
-   "label": "Grup",
-   "options": "Grup",
-   "reqd": 1
   },
   {
    "fieldname": "column_break_gekx",
@@ -161,16 +153,23 @@
    "fieldname": "date_despre_produs_column",
    "fieldtype": "Column Break",
    "label": "Date despre produs"
+  },
+  {
+   "description": "Exemplu: rame, roti, etc.",
+   "fieldname": "denumire_categorie",
+   "fieldtype": "Link",
+   "label": "Categorie Produs",
+   "options": "Categorie Produs"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [
   {
-   "link_doctype": "Comenzi",
+   "link_doctype": "Open Orders",
    "link_fieldname": "denumire_produs"
   }
  ],
- "modified": "2024-07-17 15:08:38.853449",
+ "modified": "2024-07-26 08:23:43.342455",
  "modified_by": "Administrator",
  "module": "Stoc",
  "name": "Articol",

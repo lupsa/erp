@@ -5,7 +5,7 @@
  "engine": "InnoDB",
  "field_order": [
   "informa\u021bii_generale_section",
-  "denumire_grup"
+  "denumire_categorie"
  ],
  "fields": [
   {
@@ -14,20 +14,21 @@
    "label": "Informa\u021bii Generale"
   },
   {
-   "fieldname": "denumire_grup",
+   "fieldname": "denumire_categorie",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Denumire Grup",
+   "label": "Denumire Categorie",
    "reqd": 1,
+   "set_only_once": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-14 12:59:24.457905",
+ "modified": "2024-07-26 08:26:58.802934",
  "modified_by": "Administrator",
  "module": "Stoc",
- "name": "Grup",
+ "name": "Categorie Produs",
  "naming_rule": "By script",
  "owner": "Administrator",
  "permissions": [

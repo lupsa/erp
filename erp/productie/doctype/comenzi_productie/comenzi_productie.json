@@ -5,11 +5,17 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "informa\u021bii_generale_comand\u0103_section",
   "numar_comanda_client",
   "cod_client",
-  "client",
-  "denumire_produs",
   "column_break_kban",
+  "client",
+  "section_break_yyiq",
+  "denumire_produs",
+  "numar_curent_produs",
+  "total_produse_comandate",
+  "column_break_qsgj",
+  "data_livrare",
   "section_break_mniz",
   "situatie_operatii"
  ],
@@ -17,16 +23,20 @@
   {
    "fieldname": "numar_comanda_client",
    "fieldtype": "Link",
+   "in_filter": 1,
    "in_list_view": 1,
-   "label": "Num\u0103r comand\u0103 client",
-   "options": "Comenzi",
+   "in_standard_filter": 1,
+   "label": "Comand\u0103 Client",
+   "options": "Open Orders",
    "reqd": 1,
    "set_only_once": 1
   },
   {
    "fieldname": "denumire_produs",
    "fieldtype": "Link",
+   "in_filter": 1,
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Denumire Produs",
    "options": "Articol",
    "reqd": 1,
@@ -38,12 +48,13 @@
   },
   {
    "fieldname": "section_break_mniz",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Situa\u021bia Opera\u021biilor"
   },
   {
    "fieldname": "situatie_operatii",
    "fieldtype": "Table",
-   "label": "Situa\u021bie Opera\u021bii",
+   "label": "Tabel Opera\u021bii",
    "options": "Lista Operatii CP",
    "reqd": 1
   },
@@ -62,14 +73,51 @@
    "fieldtype": "Read Only",
    "hidden": 1,
    "label": "cod_client"
+  },
+  {
+   "fieldname": "informa\u021bii_generale_comand\u0103_section",
+   "fieldtype": "Section Break",
+   "label": "Informa\u021bii comand\u0103"
+  },
+  {
+   "description": "Data de livrare se modific\u0103 in Open Orders",
+   "fieldname": "data_livrare",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Data Livrare",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_produse_comandate",
+   "fieldtype": "Int",
+   "label": "Total Produse Comandate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_yyiq",
+   "fieldtype": "Section Break",
+   "label": "Informa\u021bii Produs"
+  },
+  {
+   "fieldname": "column_break_qsgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "numar_curent_produs",
+   "fieldtype": "Int",
+   "label": "Num\u0103r Ordine",
+   "set_only_once": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-17 14:45:43.967949",
+ "modified": "2024-07-26 08:13:17.873077",
  "modified_by": "Administrator",
  "module": "Productie",
- "name": "Comanda Productie",
+ "name": "Comenzi Productie",
  "owner": "Administrator",
  "permissions": [
   {
@@ -87,5 +135,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

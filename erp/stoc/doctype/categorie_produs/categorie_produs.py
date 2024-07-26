@@ -5,6 +5,6 @@
 from frappe.model.document import Document
 
 
-class Grup(Document):
+class CategorieProdus(Document):
     def autoname(self):
-        self.name = self.denumire_grup
+        self.name = self.denumire_categorie

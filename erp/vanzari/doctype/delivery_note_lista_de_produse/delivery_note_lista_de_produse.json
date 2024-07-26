@@ -32,7 +32,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Nr. comand\u0103 intern\u0103",
-   "options": "Comenzi"
+   "options": "Open Orders"
   },
   {
    "fieldname": "column_break_kcuk",
@@ -54,7 +54,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-17 08:23:27.560765",
+ "modified": "2024-07-18 09:13:39.616524",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Delivery Note Lista de Produse",
