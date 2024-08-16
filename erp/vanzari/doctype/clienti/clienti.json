@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "format:{denumire}",
  "creation": "2024-01-19 12:49:54.433424",
  "doctype": "DocType",
@@ -28,8 +27,10 @@
    "set_only_once": 1
   },
   {
+   "description": "Format: 01, 02, 03, etc.",
    "fieldname": "cod_client",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Cod Client",
    "length": 3,
    "non_negative": 1,
@@ -48,8 +49,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-05-17 08:41:30.284421",
+ "links": [
+  {
+   "link_doctype": "Open Orders",
+   "link_fieldname": "client"
+  }
+ ],
+ "modified": "2024-07-30 09:44:48.529827",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Clienti",

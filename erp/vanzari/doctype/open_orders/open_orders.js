@@ -3,7 +3,7 @@
 
 frappe.ui.form.on("Open Orders", {
 
-    before_submit(frm, cdt, cdn) {
+    after_save(frm, cdt, cdn) {
         let produse_comandate = frm.doc.produse_comandate;
         for(let i = 0; i < produse_comandate.length; i++) {
             let row = frappe.get_doc(produse_comandate[i].doctype, produse_comandate[i].name)
@@ -17,7 +17,10 @@ frappe.ui.form.on("Open Orders", {
                     "denumire_produs": row.denumire_produs,
                     "numar_curent_produs": i_row,
                     "total_produse_comandate": row.cantitate_comandata,
-                    "data_livrare": row.data_livrare
+                    "data_livrare": row.data_livrare,
+                    "situatie_operatii": [{
+
+                    }]
                 }).then(function(doc) { 
                     frappe.msgprint({
                         title: __('Lansare Comanda Productie'),

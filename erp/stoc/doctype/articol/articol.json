@@ -7,16 +7,16 @@
   "date_despre_produs_section",
   "date_despre_produs_column",
   "denumire",
-  "desen",
   "client",
+  "desen",
+  "revizie_desen",
+  "desen_2",
   "denumire_categorie",
   "column_break_gekx",
   "greutate_neta",
   "lungime",
   "latime",
   "inaltime",
-  "lista_de_opera\u021bii_section",
-  "opera\u021bii",
   "section_break_qwna",
   "produs",
   "material",
@@ -58,7 +58,11 @@
    "depends_on": "eval:doc.denumire_grup == 'Repere';",
    "fieldname": "section_break_qwna",
    "fieldtype": "Section Break",
-   "label": "Informa\u021bii Reper"
+   "hidden": 1,
+   "label": "Informa\u021bii Reper",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
   },
   {
    "fieldname": "program_debitare",
@@ -100,18 +104,6 @@
    "label": "Client",
    "options": "Clienti",
    "reqd": 1
-  },
-  {
-   "depends_on": "eval:doc.denumire_grup == \"Produse Finite\"",
-   "fieldname": "lista_de_opera\u021bii_section",
-   "fieldtype": "Section Break",
-   "label": "Lista de Opera\u021bii"
-  },
-  {
-   "fieldname": "opera\u021bii",
-   "fieldtype": "Table",
-   "label": "Opera\u021bii",
-   "options": "Articol Lista Operatii"
   },
   {
    "fieldname": "cantitate",
@@ -160,6 +152,18 @@
    "fieldtype": "Link",
    "label": "Categorie Produs",
    "options": "Categorie Produs"
+  },
+  {
+   "description": "Daca nu este revizie se trece '-'",
+   "fieldname": "revizie_desen",
+   "fieldtype": "Data",
+   "label": "Revizie Desen",
+   "reqd": 1
+  },
+  {
+   "fieldname": "desen_2",
+   "fieldtype": "Data",
+   "label": "Desen 2"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -167,9 +171,17 @@
   {
    "link_doctype": "Open Orders",
    "link_fieldname": "denumire_produs"
+  },
+  {
+   "link_doctype": "Comenzi Productie",
+   "link_fieldname": "denumire_produs"
+  },
+  {
+   "link_doctype": "Lista Operatii",
+   "link_fieldname": "denumire_produs"
   }
  ],
- "modified": "2024-07-26 08:23:43.342455",
+ "modified": "2024-07-30 09:46:43.414063",
  "modified_by": "Administrator",
  "module": "Stoc",
  "name": "Articol",
@@ -192,7 +204,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "track_changes": 1,
- "track_seen": 1,
- "track_views": 1
+ "track_changes": 1
 }

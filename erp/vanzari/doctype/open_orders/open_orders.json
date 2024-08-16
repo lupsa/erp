@@ -98,14 +98,14 @@
   {
    "fieldname": "comenzi_productie_section",
    "fieldtype": "Section Break",
-   "label": "Comenzi Productie",
-   "read_only": 1
+   "label": "Comenzi Productie"
   },
   {
    "fieldname": "section_break_nbvp",
    "fieldtype": "Section Break"
   },
   {
+   "allow_bulk_edit": 1,
    "fieldname": "tabel_comenzi_productie",
    "fieldtype": "Table",
    "options": "Open Orders Tabel Comenzi Productie"
@@ -129,7 +129,7 @@
    "link_fieldname": "numar_comanda_client"
   }
  ],
- "modified": "2024-07-26 08:32:12.760541",
+ "modified": "2024-07-30 09:40:51.808406",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Open Orders",

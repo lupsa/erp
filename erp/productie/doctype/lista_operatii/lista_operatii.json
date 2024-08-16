@@ -1,7 +1,6 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:Operatii - {denumire_produs}  #{###}",
  "creation": "2024-07-17 10:12:01.211127",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -27,12 +26,16 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-07-17 11:38:53.624166",
+ "links": [
+  {
+   "link_doctype": "Open Orders",
+   "link_fieldname": "lista_operatii_cda"
+  }
+ ],
+ "modified": "2024-07-30 09:45:51.169072",
  "modified_by": "Administrator",
  "module": "Productie",
  "name": "Lista Operatii",
- "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
