@@ -17,14 +17,6 @@
   "lungime",
   "latime",
   "inaltime",
-  "section_break_qwna",
-  "produs",
-  "material",
-  "program_debitare",
-  "nota",
-  "column_break_eqyy",
-  "cantitate",
-  "um_cantitate",
   "descriere_section",
   "descriere"
  ],
@@ -55,33 +47,6 @@
    "label": "Date gabaritice"
   },
   {
-   "depends_on": "eval:doc.denumire_grup == 'Repere';",
-   "fieldname": "section_break_qwna",
-   "fieldtype": "Section Break",
-   "hidden": 1,
-   "label": "Informa\u021bii Reper",
-   "print_hide": 1,
-   "read_only": 1,
-   "report_hide": 1
-  },
-  {
-   "fieldname": "program_debitare",
-   "fieldtype": "Data",
-   "label": "Program Debitare"
-  },
-  {
-   "fieldname": "nota",
-   "fieldtype": "Data",
-   "label": "Nota"
-  },
-  {
-   "description": "Produsul din care face parte reperul",
-   "fieldname": "produs",
-   "fieldtype": "Link",
-   "label": "Produs",
-   "options": "Articol"
-  },
-  {
    "collapsible": 1,
    "fieldname": "descriere_section",
    "fieldtype": "Section Break",
@@ -93,33 +58,11 @@
    "label": "Descriere"
   },
   {
-   "fieldname": "material",
-   "fieldtype": "Link",
-   "label": "Calitate Material",
-   "options": "Materie Prima"
-  },
-  {
    "fieldname": "client",
    "fieldtype": "Link",
    "label": "Client",
    "options": "Clienti",
    "reqd": 1
-  },
-  {
-   "fieldname": "cantitate",
-   "fieldtype": "Int",
-   "label": "Cantitate"
-  },
-  {
-   "fieldname": "column_break_eqyy",
-   "fieldtype": "Column Break"
-  },
-  {
-   "default": "buc",
-   "fieldname": "um_cantitate",
-   "fieldtype": "Link",
-   "label": "UM",
-   "options": "Unitate de masura"
   },
   {
    "fieldname": "lungime",
@@ -181,7 +124,7 @@
    "link_fieldname": "denumire_produs"
   }
  ],
- "modified": "2024-07-30 09:46:43.414063",
+ "modified": "2024-08-16 12:32:29.516641",
  "modified_by": "Administrator",
  "module": "Stoc",
  "name": "Articol",

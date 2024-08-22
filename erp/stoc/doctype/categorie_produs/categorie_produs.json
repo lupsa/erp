@@ -25,7 +25,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-26 08:26:58.802934",
+ "modified": "2024-08-16 12:31:22.290195",
  "modified_by": "Administrator",
  "module": "Stoc",
  "name": "Categorie Produs",
@@ -45,6 +45,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

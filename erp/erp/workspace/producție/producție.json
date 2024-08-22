@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"9n-ig2mwXY\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Produc\u021bie</span>\",\"col\":12}},{\"id\":\"E27lvsWaa_\",\"type\":\"card\",\"data\":{\"card_name\":\"Open Orders\",\"col\":4}},{\"id\":\"NgZIwr1AKA\",\"type\":\"card\",\"data\":{\"card_name\":\"Produse\",\"col\":4}},{\"id\":\"hXlq7Mp7Xp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rapoarte\",\"col\":3}}]",
+ "content": "[{\"id\":\"9n-ig2mwXY\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Produc\u021bie</span>\",\"col\":12}},{\"id\":\"E27lvsWaa_\",\"type\":\"card\",\"data\":{\"card_name\":\"Open Orders\",\"col\":4}},{\"id\":\"NgZIwr1AKA\",\"type\":\"card\",\"data\":{\"card_name\":\"Produse\",\"col\":4}},{\"id\":\"Lk-9TuXpBV\",\"type\":\"card\",\"data\":{\"card_name\":\"Produc\u021bie\",\"col\":4}}]",
  "creation": "2024-01-19 13:04:30.681288",
  "custom_blocks": [],
  "docstatus": 0,
@@ -16,37 +16,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Produse",
-   "link_count": 2,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Articol",
-   "link_count": 0,
-   "link_to": "Articol",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Operatii",
-   "link_count": 0,
-   "link_to": "Operatii",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Open Orders",
-   "link_count": 5,
+   "link_count": 4,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -57,16 +28,6 @@
    "label": "Open Orders",
    "link_count": 0,
    "link_to": "Open Orders",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Comenzi Produc\u021bie",
-   "link_count": 0,
-   "link_to": "Comenzi Productie",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -100,9 +61,57 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Produse",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Articol",
+   "link_count": 0,
+   "link_to": "Articol",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lista Opera\u021bii",
+   "link_count": 0,
+   "link_to": "Lista Operatii",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Produc\u021bie",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Comenzi Produc\u021bie",
+   "link_count": 0,
+   "link_to": "Comenzi Productie",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2024-07-18 09:26:44.331403",
+ "modified": "2024-08-21 14:06:23.065621",
  "modified_by": "Administrator",
  "module": "ERP",
  "name": "Produc\u021bie",
@@ -113,14 +122,6 @@
  "quick_lists": [],
  "roles": [],
  "sequence_id": 1.0,
- "shortcuts": [
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Rapoarte",
-   "type": "URL",
-   "url": "http://erp.localhost:8001/insights/dashboard"
-  }
- ],
+ "shortcuts": [],
  "title": "Produc\u021bie"
 }

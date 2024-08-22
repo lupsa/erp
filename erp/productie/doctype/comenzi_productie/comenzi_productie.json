@@ -55,8 +55,7 @@
    "fieldname": "situatie_operatii",
    "fieldtype": "Table",
    "label": "Tabel Opera\u021bii",
-   "options": "Lista Operatii CP",
-   "reqd": 1
+   "options": "Lista Operatii CP"
   },
   {
    "fetch_from": "numar_comanda_client.client",
@@ -114,7 +113,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-07-26 08:13:17.873077",
+ "modified": "2024-08-21 12:31:58.853836",
  "modified_by": "Administrator",
  "module": "Productie",
  "name": "Comenzi Productie",
