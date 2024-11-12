@@ -11,6 +11,7 @@
   "desen",
   "revizie_desen",
   "desen_2",
+  "material",
   "denumire_categorie",
   "column_break_gekx",
   "greutate_neta",
@@ -107,6 +108,14 @@
    "fieldname": "desen_2",
    "fieldtype": "Data",
    "label": "Desen 2"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "material",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Material",
+   "options": "Lista Materiale"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -124,7 +133,7 @@
    "link_fieldname": "denumire_produs"
   }
  ],
- "modified": "2024-08-16 12:32:29.516641",
+ "modified": "2024-11-12 10:03:57.849244",
  "modified_by": "Administrator",
  "module": "Stoc",
  "name": "Articol",

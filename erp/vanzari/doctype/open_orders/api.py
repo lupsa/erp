@@ -11,12 +11,15 @@ def generare_comanda_productie(doc):
 
     for row in produse_comandate:
         operatii = []
-        op = frappe.get_doc("Lista Operatii", row['lista_operatii_cda'])
-        for op_row in op.lista_operatii:
-            operatii.append({
-                "operatia": op_row.operatia,
-                "numar_ore_manopera": op_row.ore_manopera,
-                "obvervatii": op_row.observatii,
-                })
+        try:
+            op = frappe.get_doc("Lista Operatii", row['lista_operatii_cda'])
+            for op_row in op.lista_operatii:
+                operatii.append({
+                    "operatia": op_row.operatia,
+                    "numar_ore_manopera": op_row.ore_manopera,
+                    "obvervatii": op_row.observatii,
+                    })
+        except:
+            return operatii
 
     return doc_dict

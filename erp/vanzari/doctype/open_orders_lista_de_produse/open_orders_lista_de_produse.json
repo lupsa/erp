@@ -103,9 +103,11 @@
    "label": "Cantitate livrat\u0103"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "cantitate_ramasa",
    "fieldtype": "Read Only",
-   "label": "Cantitate ramas\u0103"
+   "label": "Cantitate ramas\u0103",
+   "read_only": 1
   },
   {
    "fieldname": "lista_operatii_cda",
@@ -133,7 +135,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-08-22 10:23:18.690521",
+ "modified": "2024-11-12 10:18:46.278207",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Open Orders lista de produse",

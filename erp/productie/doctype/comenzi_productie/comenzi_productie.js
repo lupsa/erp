@@ -3,7 +3,7 @@
 
 frappe.ui.form.on("Comenzi Productie", {
     refresh: function(frm, cdt, cdn) {
-        console.log(frm.doc);
+        console.log(frm.doc)
 
 	},
 });

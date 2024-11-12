@@ -12,7 +12,3 @@ import frappe
 @frappe.whitelist()
 def get_logged_user():
     return frappe.session.user
-
-@frappe.whitelist()
-def generare_comanda_productie(frm):
-    return frm

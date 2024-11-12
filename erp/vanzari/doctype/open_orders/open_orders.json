@@ -16,10 +16,7 @@
   "lista_de_produse_section",
   "produse_comandate",
   "section_break_nbvp",
-  "amended_from",
-  "status_comenzi_productie_tab",
-  "comenzi_productie_section",
-  "tabel_comenzi_productie"
+  "amended_from"
  ],
  "fields": [
   {
@@ -96,29 +93,13 @@
    "reqd": 1
   },
   {
-   "fieldname": "comenzi_productie_section",
-   "fieldtype": "Section Break",
-   "label": "Comenzi Productie"
-  },
-  {
    "fieldname": "section_break_nbvp",
    "fieldtype": "Section Break"
-  },
-  {
-   "allow_bulk_edit": 1,
-   "fieldname": "tabel_comenzi_productie",
-   "fieldtype": "Table",
-   "options": "Open Orders Tabel Comenzi Productie"
   },
   {
    "fieldname": "open_orders_tab",
    "fieldtype": "Tab Break",
    "label": "Open Orders"
-  },
-  {
-   "fieldname": "status_comenzi_productie_tab",
-   "fieldtype": "Tab Break",
-   "label": "Status Comenzi Productie"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -129,7 +110,7 @@
    "link_fieldname": "numar_comanda_client"
   }
  ],
- "modified": "2024-07-30 09:40:51.808406",
+ "modified": "2024-11-12 10:13:23.358237",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Open Orders",

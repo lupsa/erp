@@ -17,7 +17,8 @@
   "column_break_qsgj",
   "data_livrare",
   "section_break_mniz",
-  "situatie_operatii"
+  "situatie_operatii",
+  "amended_from"
  ],
  "fields": [
   {
@@ -109,11 +110,22 @@
    "fieldtype": "Int",
    "label": "Num\u0103r Ordine",
    "set_only_once": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Comenzi Productie",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-08-21 12:31:58.853836",
+ "modified": "2024-11-12 10:21:31.712013",
  "modified_by": "Administrator",
  "module": "Productie",
  "name": "Comenzi Productie",

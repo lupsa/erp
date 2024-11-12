@@ -3,18 +3,18 @@
 
 frappe.ui.form.on("Open Orders", {
 
-	refresh(frm) {
-		frappe.call({
-			method: "erp.vanzari.doctype.open_orders.api.generare_comanda_productie",
-			args: {
-				doc: frm.doc
-			},
-			callback(r){
-				console.log(r.message);
-			}
-		});
-
-	},
+//	refresh(frm) {
+//		frappe.call({
+//			method: "erp.vanzari.doctype.open_orders.api.generare_comanda_productie",
+//			args: {
+//				doc: frm.doc
+//			},
+//			callback(r){
+//				console.log(r.message);
+//			}
+//		});
+//
+//	},
 
 	before_submit(frm) {
 		let produse_comandate = frm.doc.produse_comandate;
@@ -60,17 +60,17 @@ frappe.ui.form.on("Open Orders", {
 						message: __(`Comanda ${doc.name} pentru produsul ${doc.denumire_produs} a fost lansată`)
 					});
 
-					let row_comenzi_productie = frm.add_child('tabel_comenzi_productie');
-					row_comenzi_productie.numar_comanda_productie = doc.name;
-					row_comenzi_productie.denumire_produs = doc.denumire_produs;
-					row_comenzi_productie.data_lansare_comanda_productie = doc.creation;
+				//	let row_comenzi_productie = frm.add_child('tabel_comenzi_productie');
+				//	row_comenzi_productie.numar_comanda_productie = doc.name;
+				//	row_comenzi_productie.denumire_produs = doc.denumire_produs;
+				//	row_comenzi_productie.data_lansare_comanda_productie = doc.creation;
 
-					frm.refresh_field('tabel_comenzi_productie');
+				//	frm.refresh_field('tabel_comenzi_productie');
 
 				});
 			}
 		}
-		frm.save();
+	//	frm.save();
 	},
 
 	onload(frm, cdt, cdn) {
@@ -151,7 +151,6 @@ frappe.ui.form.on('Open Orders lista de produse', {
 			async:false,
 			callback: function(r) {
 				let val = r.message;
-				console.log(val);
 				val.forEach((el) => {
 					frappe.db.set_value('Comenzi Productie', el.name, 'data_livrare', row.data_livrare);
 					frappe.show_alert({
