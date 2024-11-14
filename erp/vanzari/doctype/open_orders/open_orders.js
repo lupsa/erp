@@ -73,7 +73,7 @@ frappe.ui.form.on("Open Orders", {
 	//	frm.save();
 	},
 
-	onload(frm, cdt, cdn) {
+	onload(frm) {
 	   frm.set_query("nume_prenume", function() {
 			return {
 				"filters": {
@@ -81,6 +81,14 @@ frappe.ui.form.on("Open Orders", {
 				}
 			};
 	   });
+
+		frm.set_query("denumire_produs", 'produse_comandate', function() {
+			return {
+				"filters": {
+					client: frm.doc.client,
+				}
+			};
+		});
 
 		frm.set_query("adresa_de_livrare", 'produse_comandate', function() {
 			return {
@@ -90,7 +98,7 @@ frappe.ui.form.on("Open Orders", {
 			};
 		});
 
-		frm.set_query("lista_operatii_cda", 'produse_comandate', function(doc, cdt, cdn) {
+		frm.set_query("lista_operatii_cda", 'produse_comandate', function(frm, cdt, cdn) {
 			let row = frappe.get_doc(cdt, cdn);
 			return {
 				"filters": {
