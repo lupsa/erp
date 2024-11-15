@@ -110,7 +110,7 @@
    "link_fieldname": "numar_comanda_client"
   }
  ],
- "modified": "2024-11-14 08:53:59.082226",
+ "modified": "2024-11-14 13:38:47.208763",
  "modified_by": "Administrator",
  "module": "Vanzari",
  "name": "Open Orders",
@@ -120,7 +120,6 @@
    "amend": 1,
    "cancel": 1,
    "create": 1,
-   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -140,7 +139,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Accounts User",
+   "role": "ERP",
    "share": 1,
    "submit": 1,
    "write": 1
